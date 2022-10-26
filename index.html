@@ -6,25 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My profile</title>
+    <link href="profileStyle.css" rel="stylesheet"/>
 </head>
 
 <body>
+    
     <nav>
-        <ul>
+        <ul class="container">
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="https://www.linkedin.com/in/tudor-birgau-119302208/" target="_blank">LinkedIn</a></li>
         </ul>
     </nav>
-    <header>
-        <h1 style="text-decoration: underline;">Tudor Birgau</h1>
-        <img src="20221013_123432.jpg" alt="profile pic" width=200 />
-        <hr />
-    </header>
+    <div class="container-cesar">
+        <header>
+            <h1 id="main-title">Tudor Birgau</h1>
+            <img src="20221013_123432.jpg" alt="profile pic" id="profile-pic"/>
+            <hr />
+        </header>
+    </div>
 
-    <section>
-        <article>
+    <section class="section-1">
+        <article class="demo-class section-1">
             <h2>My profile</h2>
+            <p>Here is <em>my</em> <strong>profile</strong></p>
         </article>
         <article>
             <h2>Skills</h2>
@@ -36,7 +41,7 @@
                 <li>Fat</li>
             </ol>
         </article>
-        <article>
+        <article class="section-1">
             <h3>Hobbies</h3>
             <ul>
                 <li>Guitar</li>
@@ -52,8 +57,8 @@
         </article>
 
     </section>
-    <section>
-        <form action="https://www.bbc.co.uk/search" method="get" target="_blank">
+    <section class="section-2">
+        <form action="https://www.bbc.co.uk/search" method="get" target="_blank" id="myform">
             <label for="mysearch">Search for:</label>
             <input id="mysearch" type="text" name="q" value="Birmingham" />
             <input type="submit" value="Submit Me" />
