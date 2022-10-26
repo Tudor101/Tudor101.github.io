@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloons TD</title>
+    <link href="profileStyle.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <script src="game.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="https://www.linkedin.com/in/tudor-birgau-119302208/" target="_blank">LinkedIn</a></li>
+            <li><a href="game.html">Game</a></li>
+        </ul>
+    </nav>
+    <div id="title-container">
+        <h1 id="greeting" onmouseover="changeText()">Hello there!</h1>
+    </div>
+    <button onclick="greeting()">Say hello</button>
+
+    <hr/>
+
+    <section id="gameContainer">
+        <h2>Pop the Balloons!</h2>
+        <p>Score: <span id="score">0</span></p>
+    </section>
+</body>
+
+</html>
