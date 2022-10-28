@@ -3,7 +3,7 @@ class Balloon {
     constructor() {
         this.x = random(width)
         this.y = random(height)
-        this.r = 25
+        this.r = 35
         this.vx = 0
         this.vy = 0
 
