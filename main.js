@@ -6,6 +6,8 @@ function greeting() {
     console.log("Good afternoon, good evening and good night");
 }
 
+
+
 function changeText() {
 
     let para = document.getElementById("new-para");

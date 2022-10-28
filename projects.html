@@ -4,41 +4,69 @@
 <head>
     <meta charset="utf-8" />
     <title>My projects</title>
-    <link href="profileStyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body {
+            background: teal;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <nav id="mainNav">
-            <ul>
-                <li class="nav-item"><a href="index.html">Go to Profile</a></li>
-                <li class="nav-item"><a href="projects.html">Go to Projects</a></li>
-                <li class="nav-item"><a href="https://www.linkedin.com/" target="_blank">My LinkedIn</a></li>
-                <li><a href="game.html">Game</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="armstrong.png" width= 150/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Game</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/tudor-birgau-119302208/" target="_blank">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
         <h1>Projects</h1>
-        <table>
+        <table class="table">
             <thead>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                    <th>Year</th>
-                </tr>
+              <tr>
+                <th scope="col">Project Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Year</th>
+              </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Agile Project</td>
-                    <td>Did some stuff with user stories</td>
-                    <td>2022</td>
-                </tr>
-                <tr>
-                    <td>API Project</td>
-                    <td>Made requests</td>
-                    <td>2022</td>
-                </tr>
+              <tr>
+                <th scope="row">Agile Project</th>
+                <td>Did some stuff with user stories</td>
+                <td>2022</td>
+              </tr>
+              <tr>
+                <th scope="row">API Project</th>
+                <td>Made Requests</td>
+                <td>2022</td>
+              </tr>
+              <tr>
+                <th scope="row">Sort Manager Project</th>
+                <td>Created a sort manager that let users choose different sorting algorithms to sort an array</td>
+                <td>2022</td>
+              </tr>
             </tbody>
-        </table>
+          </table>
     </main>
 </body>
 

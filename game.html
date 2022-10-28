@@ -6,32 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloons TD</title>
-    <link href="profileStyle.css" rel="stylesheet">
+    
     <script src="main.js" defer></script>
     <script src="game.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body {
+            background: teal;
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <ul class="container">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="https://www.linkedin.com/in/tudor-birgau-119302208/" target="_blank">LinkedIn</a></li>
-            <li><a href="game.html">Game</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="armstrong.png" width= 150/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="game.html">Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/tudor-birgau-119302208/"
+                        target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <div id="title-container">
         <h1 id="greeting" onmouseover="changeText()">Hello there!</h1>
     </div>
-    <button onclick="greeting()">Say hello</button>
-
+    <button onclick="greeting()" class="btn btn-primary px-4 ms-3">Say Hello</button>
+    <button onclick="notRefresh()" class="btn btn-primary px-4 ms-3">Reset</button>
     <hr/>
 
     <section id="gameContainer">
         <h2>Pop the Balloons!</h2>
         <p>Score: <span id="score">0</span></p>
+        
     </section>
 </body>
 

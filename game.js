@@ -41,11 +41,17 @@ class Balloon {
             let currScore = Number(document.getElementById("score").innerHTML)
             currScore++
             document.getElementById("score").innerHTML = currScore
-            this.col = color(156)
+            this.col = color(255,255,255,1)
 
             popSfx.play()
         }
     }
+}
+
+function notRefresh(){
+    document.getElementById("score").innerHTML = 0;
+    setup();
+    draw();
 }
 
 let balloons = []
@@ -72,7 +78,7 @@ function setup() {
 function draw() {
     //a nice sky blue background    
     background(135, 206, 235)
-
+    noStroke();
     for (let i = 0; i < NUM_OF_BALLOONS; i++) {
         fill(balloons[i].col)
         circle(balloons[i].x, balloons[i].y, balloons[i].r)
